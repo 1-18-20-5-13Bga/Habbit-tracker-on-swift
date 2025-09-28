@@ -10,9 +10,9 @@ import SwiftUI
 
 struct MainView: View {
     @State private var views: [String: AnyView]  =
-                                    ["Motivational quotes": AnyView(apiView()),
+                                    ["Creator":AnyView(ProfileView()),
                                      "Habbit tracker": AnyView(CustomView()),
-                                     "Creator":AnyView(ProfileView())]
+                                     "Motivational quotes": AnyView(apiView()),]
     @State var presentSheet = false
     @State var darkMode = false
     
